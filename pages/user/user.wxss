@@ -1,0 +1,9 @@
+/* pages/user/user.wxss */
+.user {
+  display: flex
+
+}
+
+.avatar {
+  width: 120rpx;
+}

@@ -62,7 +62,11 @@
         {
           "name": "pages/show/show",
           "pathName": "pages/show/show",
-          "query": "id=5fbcfdeb88d985391bf988f3",
+          "query": "id=5fbcfdeb88d985391bf988f3"
+        },
+        {
+          "name": "pages/user/user",
+          "pathName": "pages/user/user",
           "scene": null
         }
       ]
