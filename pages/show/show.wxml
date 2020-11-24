@@ -1,0 +1,8 @@
+<view class="container">
+  <view class="card">
+    <view class="card-name">{{dish.name}}</view>
+    <view class="card-des">{{dish.description}}</view>
+    <image class="card-image" src="{{dish.image.path}}"></image>
+    <button type="primary"> Like </button>
+  </view>
+</view>

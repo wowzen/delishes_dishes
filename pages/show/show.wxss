@@ -1,0 +1,25 @@
+.card {
+margin:36rpx 36rpx;
+padding:36rpx;
+text-align: center;
+
+}
+
+.card-name {
+  font-size: 50rpx;
+  font-size: bolder;
+  color:#04BE02;
+  margin: 50rpx 50rpx;
+  text-align: center;
+  }
+
+.card-des {
+  font-size: 36rpx;
+  color: #666;
+  margin: 50rpx 50rpx;
+  text-align: center;
+  }
+
+.card-image {
+border-radius: 12%;
+}
