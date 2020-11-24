@@ -1,0 +1,12 @@
+<!--pages/user/user.wxml-->
+<view wx:if="{{currentUser}}">
+  <view class="user">
+    <image class="avatar" src="{{currentUser.avatar}}" mode="aspectFit"/>
+  <view class="userNickName">{{currentUser.nickname}}</view>
+</view> 
+<button class="btn" type="primary" bindtap="goToDishesIndex"> View all delishes dishes!</button>
+</view>
+<view wx:else>
+  <button open-type="getUserInfo" bindgetuserinfo="login">Login here!
+  </button>
+</view>

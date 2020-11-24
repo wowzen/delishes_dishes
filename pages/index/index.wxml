@@ -1,1 +1,9 @@
-I am Zhengyu
+<view class="header">Delishes Dishes</view>
+
+<view class="container">
+  <view wx:for= "{{dishes}}" wx:key="dishes" wx:for-item="dish" data-dishid="dish.id" class="card" bindtap="goToDish">
+    <image class="image" src="{{dish.image.path}}" mode="aspectFit"/>
+    <view class="name">{{dish.name}}</view>
+    <view class="description">{{dish.description}}</view>
+  </view>
+</view>
