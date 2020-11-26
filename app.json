@@ -17,5 +17,25 @@
      }
  },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+    "list": [
+
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home",
+        "iconPath": "pages/images/home.png", 
+        "selectedIconPath": "pages/images/home.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "Me",
+        "iconPath": "pages/images/me.png", 
+        "selectedIconPath": "pages/images/me.png"
+      }
+      
+    ]}
+
+
 }
