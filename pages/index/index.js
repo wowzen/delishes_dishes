@@ -1,7 +1,5 @@
 Page({
-  onLoad: 
-  
-  function () {
+  onLoad: function () {
     let currentUser = wx.getStorageSync('user')
     this.setData({currentUser: currentUser})
     let Dishes = new wx.BaaS.TableObject("dishes")
@@ -11,7 +9,6 @@ Page({
     }, err => {
       // err
     })
-
 
   },
 

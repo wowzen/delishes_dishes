@@ -18,6 +18,7 @@ Page({
     this.setData({currentUser: currentUser})
 
   },
+
   login: function (e) {
     console.log(e)
     wx.BaaS.auth.loginWithWechat(e).then(res => {
