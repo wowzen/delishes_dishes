@@ -6,7 +6,6 @@ Page({
     this.setData({currentUser: currentUser})
     let Dishes = new wx.BaaS.TableObject("dishes")
     Dishes.find().then(res => {
-      console.log(res)
       this.setData({dishes: res.data.objects})
     }, err => {
       // err
