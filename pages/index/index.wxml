@@ -5,5 +5,10 @@
     <image class="image" src="{{dish.image.path}}" mode="aspectFit"/>
     <view class="name">{{dish.name}}</view>
     <view class="description">{{dish.description}}</view>
+    <view class="likes">
+      <view class="like_count">{{dish.likes}}</view>
+      <image class="like_heart" src="../../images/heart.png">like</image>
+    </view>
+    
   </view>
 </view>
