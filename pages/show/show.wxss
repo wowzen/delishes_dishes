@@ -1,58 +1,98 @@
 
-.container {
+.card{
   margin-bottom: 32px;
   padding-bottom: 32px;
-  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
 
 }
 
-.card {
-  width: 100%;
-  background: white;
-  border-radius: 4px;
-  margin: 32rpx 0;
-  box-shadow: 2px 2px 84px rgba(0,0,0,0.2);
-  padding: 16rpx;
-  box-sizing: border-box;
-}
 
 .card-name {
-  display: flex;
+  position: relative;
+  padding-top: 8px;
+  padding-left: 8px;
+
   font-family: Roboto;
-  font-style: bold;
-  font-size:64rpx;
-  }
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
+}
 
 .card-des {
-  font-size: 36rpx;
-  color: #666;
-  margin: 50rpx 50rpx;
-  text-align: center;
-  }
+  position: relative;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-bottom: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
 
 .card-image {
-border-radius: 8%;
+  border-radius: 12px;
 }
 
-.likes {
+.origin {
   position: relative;
-  display: inline-flex;
-  margin-top: 32px;
-  padding-left: 12px;
+  padding-top: 8px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
 }
-
-
-.like_count {
-  position: relative;
-  padding-right: 12px;
- }
  
- .like_heart {
-   width: 64rpx;
-   height: 64rpx;
-   margin-left: 32rpx;
- }
+.price {
+  position: relative;
+  padding-top: 8px;
 
- .btn {
-   margin-top: 32rpx;
- }
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
+}
+.descriptiontitle {
+  position: relative;
+  padding-top: 8px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
+}
+.fulldescription {
+
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-bottom: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
+}
