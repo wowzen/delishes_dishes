@@ -19,23 +19,11 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json",
 
-  "tabBar": {
-    "list": [
-
-      {
-        "pagePath": "pages/index/index",
-        "text": "Home",
-        "iconPath": "pages/images/home.png", 
-        "selectedIconPath": "pages/images/home.png"
+  "searchbar": {
+    "usingComponents": {
+      "mp-searchbar": "../components/searchbar/searchbar"
       },
-      {
-        "pagePath": "pages/user/user",
-        "text": "Me",
-        "iconPath": "pages/images/me.png", 
-        "selectedIconPath": "pages/images/me.png"
-      }
-      
-    ]}
-
+      "navigationBarTitleText": "UI组件库"
+    }
 
 }

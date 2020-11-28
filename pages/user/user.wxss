@@ -7,3 +7,46 @@
 .avatar {
   width: 120rpx;
 }
+
+.navigation-bar{
+  position: fixed;
+  width: 348px;
+  height: 61px;
+  left: 14px;
+  top: 660px;
+  background-color:#eeecec;
+  display: flex;
+  border-radius: 30px;
+
+}
+
+.home {
+  position: absolute;
+  left: 20.69%;
+  right: 70.69%;
+  top: 24.59%;
+  bottom: 26.23%;
+
+
+}
+
+.line {
+  position: absolute;
+  left: 40%;
+  right: 37.05%;
+  top: 88%;
+  bottom: 10%;
+
+  border: 1px solid #A4A2A0;
+  transform: rotate(-90deg);
+ 
+}
+
+.user {
+  position: absolute;
+  left: 68.68%;
+  right: 22.7%;
+  top: 24.59%;
+  bottom: 26.23%;
+
+}

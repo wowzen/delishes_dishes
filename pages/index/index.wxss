@@ -1,23 +1,191 @@
-.card {
-  width: 100%;
-  padding: 16rpx;
+.header{
+  height: 84px;
+  width: 313px;
+  padding-left: 16px;
+  padding-top: 8px;
+
+  font-family: Roboto;
+  font-style: bold;
+  font-size:65rpx;
+  line-height: 42rpx;
+  line-height: 100%;
+  text-align: left;
+  vertical-align: top;
+  fill: #000000;
+}
+
+.search-card{
+  width: 90%;
+  height: 43px;
   box-sizing: border-box;
-  border-radius: 8rpx;
-  background-color: white;
-  box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+  border-radius: 12rpx;
+  background-color:#eeecec;
+  margin-bottom: 32rpx;
+  text-align: center;
+  margin: 16px;
+}
+
+.search { 
+  font: Roboto;
+  font-weight: 300;
+  font-style: normal;
+  size: 20;
+  padding-top: 10px;
   margin-bottom: 32rpx;
 }
 
-.image {
-  width: 100%;
+.location { 
+  width: 411px;
+  height: 43;
+  display: flex;
+  flex-direction: row;
+
+}
+.location1 {
+  position: relative;
+  width: 126px;
+  height: 43px;
+  box-sizing: border-box;
+  background: #FFD076;
+  border-radius: 10px;
+  margin-left: 16px;
+
+}
+
+.container {
+  margin-bottom: 32px;
+}
+
+.card {
+  width: 348px;
+  height: 367px;
+  right: 13px;
+  top: 291px;
+
+  background: #E5E5E5;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+}
+
+.name {
+  position: relative;
+  padding-top: 8px;
+  padding-left: 8px;
+
+ 
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
+}
+
+.description {
+  position: relative;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-bottom: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
+}
+
+.margin{
+  position: relative;
+  width: 100;
+  height: 0px;
+  align-content: center;
+
+
+  border: 1px solid #C4C4C4;
 }
 
 .likes {
+  position: relative;
   display: inline-flex;
+  margin-top: 30px;
+  padding-left: 8px;
 }
+
+.like {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+
+}
+
+.like_count {
+ position: relative;
+ padding-right: 8px;
+}
+
+  
+.image {
+  width: 348px;
+  height: 200px;
+
+  border-radius: 10px 10px 0px 0px;
+
+}
+
 
 .like_heart {
   width: 64rpx;
   height: 64rpx;
   margin-left: 32rpx;
+}
+
+.navigation-bar{
+  position: fixed;
+  width: 348px;
+  height: 61px;
+  left: 14px;
+  top: 660px;
+  background-color:#eeecec;
+  display: flex;
+  border-radius: 30px;
+
+}
+
+.home {
+  position: absolute;
+  left: 20.69%;
+  right: 70.69%;
+  top: 24.59%;
+  bottom: 26.23%;
+
+
+}
+
+.line {
+  position: absolute;
+  left: 40%;
+  right: 37.05%;
+  top: 88%;
+  bottom: 10%;
+
+  border: 1px solid #A4A2A0;
+  transform: rotate(-90deg);
+ 
+}
+
+.user {
+  position: absolute;
+  left: 68.68%;
+  right: 22.7%;
+  top: 24.59%;
+  bottom: 26.23%;
+
 }

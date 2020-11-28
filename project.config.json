@@ -21,21 +21,21 @@
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
 		"compileHotReLoad": false,
-		"useMultiFrameRuntime": false,
-		"useApiHook": true,
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"enableEngineNative": false,
+		"bundle": false,
 		"useIsolateContext": true,
 		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false,
+		"useMultiFrameRuntime": false,
+		"useApiHook": true,
+		"enableEngineNative": false,
 		"packNpmManually": false,
 		"packNpmRelationList": [],
-		"minifyWXSS": true,
-		"bundle": false
+		"minifyWXSS": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.14.0",
@@ -49,6 +49,14 @@
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
 		"plugin": {
 			"list": []
 		},
@@ -59,24 +67,8 @@
 			"list": []
 		},
 		"miniprogram": {
-			"list": [
-				{
-					"name": "pages/show/show",
-					"pathName": "pages/show/show",
-					"query": "id=5fbcfdeb88d985391bf988f3"
-				},
-				{
-					"name": "pages/user/user",
-					"pathName": "pages/user/user",
-					"query": "",
-					"scene": null
-				},
-				{
-					"name": "pages/index/index",
-					"pathName": "pages/index/index",
-					"scene": null
-				}
-			]
+			"current": -1,
+			"list": []
 		}
 	}
 }

@@ -10,3 +10,9 @@
   <button open-type="getUserInfo" bindgetuserinfo="login">Login here!
   </button>
 </view>
+
+<view class="navigation-bar">
+  <image class="home" src="../../images/home.png" style="width:30px; height:30px;" bindtap="goToHomePage"></image>
+  <view class="line"></view>
+  <image class="user" src="../../images/user (1).png" style="width:30px; height:30px;" bindtap="goToUserPage"></image>
+</view>
