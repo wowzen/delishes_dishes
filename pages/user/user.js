@@ -16,7 +16,11 @@ Page({
     let currentUser = wx.getStorageSync('user');
     console.log(currentUser)
     this.setData({currentUser: currentUser})
-
+    let likes = new wx.BaaS.TableObject("Likes")
+    let query = new wx.BaaS.Query()
+    likes.setQuery(query).find(res => {
+      console.log(res)
+    })
   },
 
   login: function (e) {
@@ -25,7 +29,7 @@ Page({
       console.log(res)
       wx.setStorageSync('user', res)
       this.setData({currentUser: res})
-    })
+      })
   },
 
   goToDishesIndex: function () {
