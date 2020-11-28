@@ -8,7 +8,7 @@
   width: 120rpx;
 }
 
-.navigation-bar{
+.navigation-bar {
   position: fixed;
   width: 348px;
   height: 61px;
@@ -48,5 +48,4 @@
   right: 22.7%;
   top: 24.59%;
   bottom: 26.23%;
-
 }

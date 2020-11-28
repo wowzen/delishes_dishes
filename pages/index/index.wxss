@@ -61,11 +61,19 @@
   height: 367px;
   right: 13px;
   top: 291px;
-
   background: #E5E5E5;
   border-radius: 10px;
   margin-bottom: 30px;
+}
 
+.card {
+  width: 100%;
+  background: white;
+  border-radius: 4px;
+  margin: 32rpx 0;
+  box-shadow: 2px 2px 84px rgba(0,0,0,0.2);
+  padding: 16rpx;
+  box-sizing: border-box;
 }
 
 .name {
@@ -131,13 +139,10 @@
  padding-right: 8px;
 }
 
-  
-.image {
-  width: 348px;
-  height: 200px;
-
-  border-radius: 10px 10px 0px 0px;
-
+image {
+  height: 50%;
+  border-radius: 4px;
+  width: 100%;
 }
 
 
@@ -177,8 +182,7 @@
   bottom: 10%;
 
   border: 1px solid #A4A2A0;
-  transform: rotate(-90deg);
- 
+  transform: rotate(-90deg); 
 }
 
 .user {

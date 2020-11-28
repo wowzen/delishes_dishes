@@ -2,14 +2,15 @@ Page({
   onLoad: function () {
     let currentUser = wx.getStorageSync('user')
     this.setData({currentUser: currentUser})
+  },
+
+  onShow: function () {
     let Dishes = new wx.BaaS.TableObject("dishes")
     Dishes.find().then(res => {
-      console.log(res)
       this.setData({dishes: res.data.objects})
     }, err => {
       // err
     })
-
   },
 
 
@@ -41,3 +42,4 @@ Page({
 // define an empty query object
 // add a compare object to the empty query object which is going to compare the currentTargetRegion 
 // to the column in the dishes table to only return the dishes from that region.
+

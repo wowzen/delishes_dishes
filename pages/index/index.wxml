@@ -24,8 +24,8 @@
   </view>
 </view>
 
-<view class="navigation-bar">
+<!-- <view class="navigation-bar">
   <image class="home" src="../../images/home (1).png" style="width:30px; height:30px;" bindtap="goToHomePage"></image>
   <view class="line"></view>
   <image class="user" src="../../images/user.png" style="width:30px; height:30px;" bindtap="goToUserPage"></image>
-</view>
+</view> -->
