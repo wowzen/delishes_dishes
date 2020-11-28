@@ -1,41 +1,29 @@
 // pages/user/user.js
 Page({
   
-
-  /**
-   * Page initial data
-   */
-  data: {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page load
-   */
-  onLoad: function (options) {
-    let currentUser = wx.getStorageSync('user');
-    this.setData({currentUser: currentUser})
-    let Likes = new wx.BaaS.TableObject("Likes")
-    let query = new wx.BaaS.Query()
-    query.compare('user_id', "=", currentUser.id)
-    Likes.setQuery(query).expand(['dish_id']).find().then(res => {
-      console.log(res)
-      this.setData({currentUserDishes: res.data.objects})
-    })
-
-  },
+  data: {},
 
   goToDish: function (e) {
-    
-    console.log('goToDish', e)
     let id = e.currentTarget.dataset.dishid
     wx.navigateTo({
       url: `/pages/show/show?id=${id}`,
     })
   },
 
-  getUserDishes: function () {
-
+  getLikes: function () {
+    let currentUser = this.data.currentUser;
+    let Likes = new wx.BaaS.TableObject("Likes");
+    let query = new wx.BaaS.Query()
+    
+    query.compare('user_id', "=", currentUser.id)
+    Likes.setQuery(query).expand(['dish_id']).find().then(res => {
+      let dishes = [];
+      res.data.objects.forEach((object) => {
+        let dish = object.dish_id;
+        dishes.push(dish);
+      })
+      this.setData({dishes: dishes});
+    })
   },
 
   login: function (e) {
@@ -53,52 +41,10 @@ Page({
     })
   },
 
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady: function () {
-
+  onLoad: function (options) {
+    let currentUser = wx.getStorageSync('user');
+    this.setData({currentUser: currentUser})
+    this.getLikes()
   },
 
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page hide
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page unload
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * Page event handler function--Called when user drop down
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * Called when page reach bottom
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * Called when user click on the top right corner to share
-   */
-  onShareAppMessage: function () {
-
-  }
 })

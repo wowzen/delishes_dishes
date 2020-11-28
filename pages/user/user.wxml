@@ -8,12 +8,12 @@
 <button class="btn" type="primary" bindtap="goToDishesIndex"> View all delishes dishes!</button>
 
 <view class="container">
-  <view class="card"  wx:for= "{{currentUserDishes}}" wx:key="currentUserDishes" wx:for-item="dish" data-dishid="{{dish.dish_id.id}}" bindtap="goToDish">
-    <image class="image" src="{{dish.dish_id.image.path}}" mode="aspectFit"/>
-    <view class="name">{{dish.dish_id.name}}</view>
-    <view class="description">{{dish.dish_id.description}}</view>
+  <view class="card"  wx:for= "{{dishes}}" wx:key="dish" wx:for-item="dish" data-dishid="{{dish.id}}" bindtap="goToDish">
+    <image class="image" src="{{dish.image.path}}" mode="aspectFit"/>
+    <view class="name">{{dish.name}}</view>
+    <view class="description">{{dish.description}}</view>
     <view class="likes">
-      <view class="like_count">{{dish.dish_id.likes}}</view>
+      <view class="like_count">{{dish.likes}}</view>
       <image class="like_heart" src="../../images/heart.png">like</image>
     </view>
     
