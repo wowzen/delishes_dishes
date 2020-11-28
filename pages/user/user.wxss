@@ -1,11 +1,27 @@
 /* pages/user/user.wxss */
-.user {
-  display: flex
+.container {
+  margin-top: 32rpx;
+}
 
+.user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  padding-left: 8px;
 }
 
 .avatar {
   width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.userNickName {
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  margin-left: 32rpx;
 }
 
 .navigation-bar {
@@ -26,8 +42,6 @@
   right: 70.69%;
   top: 24.59%;
   bottom: 26.23%;
-
-
 }
 
 .line {
@@ -36,16 +50,43 @@
   right: 37.05%;
   top: 88%;
   bottom: 10%;
-
   border: 1px solid #A4A2A0;
   transform: rotate(-90deg);
  
 }
 
-.user {
-  position: absolute;
-  left: 68.68%;
-  right: 22.7%;
-  top: 24.59%;
-  bottom: 26.23%;
+.likes {
+  position: relative;
+  display: inline-flex;
+  margin-top: 30px;
+  padding-left: 8px;
+}
+
+
+.like_count {
+  position: relative;
+  padding-right: 8px;
+ }
+ 
+ .like_heart {
+   width: 64rpx;
+   height: 64rpx;
+   margin-left: 32rpx;
+ }
+
+ .card {
+  width: 100%;
+  background: white;
+  border-radius: 4px;
+  margin: 32rpx 0;
+  box-shadow: 2px 2px 84px rgba(0,0,0,0.2);
+  padding: 16rpx;
+  box-sizing: border-box;
+}
+
+.header{
+  display: flex;
+  font-family: Roboto;
+  font-style: bold;
+  font-size:64rpx;
 }

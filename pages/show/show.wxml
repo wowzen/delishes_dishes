@@ -1,11 +1,15 @@
-<view class="container">
+<view class="card-name">{{dish.name}}</view>
   <view class="card">
-    <view class="card-name">{{dish.name}}</view>
     <view class="card-des">{{dish.description}}</view>
     <view class="card-des">{{dish.location}}</view>
     <image class="card-image" src="{{dish.image.path}}"></image>
-    <view>{{dish.likes}}</view>
-    <button disabled="{{disabled}}" wx:if="{{currentUser && !liked}}" type="primary" bindtap="addLike"> Like </button>
-    <button disabled="{{disabled}}" wx:if="{{currentUser && liked}}" type="warn" bindtap="removeLike">Unlike</button>
-  </view>
+    <view class="likes">
+      <view class="like_count">{{dish.likes}}</view>
+      <image class="like_heart" src="../../images/like .png">like</image>
+    </view>
+</view>
+
+<view class="btn">
+  <button disabled="{{disabled}}" wx:if="{{currentUser && !liked}}" type="primary" bindtap="addLike"> I love it! </button>
+  <button disabled="{{disabled}}" wx:if="{{currentUser && liked}}" type="warn" bindtap="removeLike">I don't love it</button>
 </view>

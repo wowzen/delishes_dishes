@@ -2,36 +2,25 @@
 .container {
   margin-bottom: 32px;
   padding-bottom: 32px;
+  display: flex;
 
 }
 
 .card {
-  position: absolute;
-  width: 348px;
-  height: 700px;
-  right: 13px;
-  top: 67px;
-  
-  background: #E5E5E5;
-  border-radius: 10px;
-
-
+  width: 100%;
+  background: white;
+  border-radius: 4px;
+  margin: 32rpx 0;
+  box-shadow: 2px 2px 84px rgba(0,0,0,0.2);
+  padding: 16rpx;
+  box-sizing: border-box;
 }
 
 .card-name {
-  height: 84px;
-  width: 313px;
-  padding-left: 16px;
-  padding-top: 8px;
-
+  display: flex;
   font-family: Roboto;
   font-style: bold;
-  font-size:65rpx;
-  line-height: 42rpx;
-  line-height: 100%;
-  text-align: left;
-  vertical-align: top;
-  fill: #000000;
+  font-size:64rpx;
   }
 
 .card-des {
@@ -42,5 +31,28 @@
   }
 
 .card-image {
-border-radius: 12%;
+border-radius: 8%;
 }
+
+.likes {
+  position: relative;
+  display: inline-flex;
+  margin-top: 32px;
+  padding-left: 12px;
+}
+
+
+.like_count {
+  position: relative;
+  padding-right: 12px;
+ }
+ 
+ .like_heart {
+   width: 64rpx;
+   height: 64rpx;
+   margin-left: 32rpx;
+ }
+
+ .btn {
+   margin-top: 32rpx;
+ }
