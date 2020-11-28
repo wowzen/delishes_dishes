@@ -26,6 +26,18 @@ Page({
     })
   },
 
+  goToHomePage: function () {
+    wx.navigateTo({
+      url: '/pages/index/index',
+    })
+
+  },
+  goToUserPage: function () {
+    wx.navigateTo({
+      url: '/pages/user/user',
+    })
+  },
+
   login: function (e) {
     console.log(e)
     wx.BaaS.auth.loginWithWechat(e).then(res => {

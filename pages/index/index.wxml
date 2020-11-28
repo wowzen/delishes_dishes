@@ -1,14 +1,31 @@
-<view class="header">Delishes Dishes</view>
+<view class="header">Explore the best of Chinese cuisines!</view>
+
+<!-- <view class="search-card">
+<view class="search">search food, location...</view>
+</view> -->
+
+<!-- <view class="location">
+<view wx:for= "{{dishes}}" wx:key="dishes" wx:for-item="dish">
+    <button class="button" bindtap="filterLocation">{{dish.location}}</button>
+  </view>
+</view> -->
 
 <view class="container">
   <view wx:for= "{{dishes}}" wx:key="dishes" wx:for-item="dish" data-dishid="{{dish.id}}" class="card" bindtap="goToDish">
-    <image class="image" src="{{dish.image.path}}" mode="aspectFit"/>
+    <image class="image" src="{{dish.image.path}}" mode="aspectFill"/>
     <view class="name">{{dish.name}}</view>
     <view class="description">{{dish.description}}</view>
+    <view class="margin"></view>
     <view class="likes">
+      <image class="like" src="../../images/like .png" style="width:28px; height:28px;" bindtap=""></image>
       <view class="like_count">{{dish.likes}}</view>
-      <image class="like_heart" src="../../images/heart.png">like</image>
+      <view>likes</view>
     </view>
-    
   </view>
 </view>
+
+<!-- <view class="navigation-bar">
+  <image class="home" src="../../images/home (1).png" style="width:30px; height:30px;" bindtap="goToHomePage"></image>
+  <view class="line"></view>
+  <image class="user" src="../../images/user.png" style="width:30px; height:30px;" bindtap="goToUserPage"></image>
+</view> -->

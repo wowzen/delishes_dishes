@@ -1,27 +1,27 @@
 <!--pages/user/user.wxml-->
 <view wx:if="{{currentUser}}">
-  <view class="user">
-    <image class="avatar" src="{{currentUser.avatar}}" mode="aspectFit"/>
+  <image class="avatar" src="{{currentUser.avatar}}" mode="aspectFit"/>
   <view class="userNickName">{{currentUser.nickname}}</view>
-  
-</view> 
-<button class="btn" type="primary" bindtap="goToDishesIndex"> View all delishes dishes!</button>
 
-<view class="container">
-  <view class="card"  wx:for= "{{dishes}}" wx:key="dish" wx:for-item="dish" data-dishid="{{dish.id}}" bindtap="goToDish">
-    <image class="image" src="{{dish.image.path}}" mode="aspectFit"/>
-    <view class="name">{{dish.name}}</view>
-    <view class="description">{{dish.description}}</view>
-    <view class="likes">
-      <view class="like_count">{{dish.likes}}</view>
-      <image class="like_heart" src="../../images/heart.png">like</image>
+  <view class="container">
+    <view class="card"  wx:for= "{{dishes}}" wx:key="dish" wx:for-item="dish" data-dishid="{{dish.id}}" bindtap="goToDish">
+      <image class="image" src="{{dish.image.path}}" mode="aspectFit"/>
+      <view class="name">{{dish.name}}</view>
+      <view class="description">{{dish.description}}</view>
+      <view class="likes">
+        <view class="like_count">{{dish.likes}}</view>
+        <image class="like_heart" src="../../images/heart.png">like</image>
+      </view>
     </view>
-    
   </view>
-</view>
 </view>
 
 <view wx:else>
-  <button open-type="getUserInfo" bindgetuserinfo="login">Login here!
-  </button>
+  <button open-type="getUserInfo" bindgetuserinfo="login">Login here!</button>
+</view>
+
+<view class="navigation-bar">
+  <image class="home" src="../../images/home.png" style="width:30px; height:30px;" bindtap="goToHomePage"></image>
+  <view class="line"></view>
+  <image class="user" src="../../images/user (1).png" style="width:30px; height:30px;" bindtap="goToUserPage"></image>
 </view>

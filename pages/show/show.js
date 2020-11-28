@@ -30,7 +30,6 @@ Page({
       dish.set('likes', likes);
       dish.update().then(res => {
         this.getDish(this.data.dish.id);
-        this.getLikes();
         this.setData({disabled: false});
       })
     })
@@ -43,6 +42,7 @@ Page({
     let Likes = new wx.BaaS.TableObject('Likes');
 
     Likes.delete(likeID).then(res => {
+      console.log(res);
       let MyTableObject = new wx.BaaS.TableObject("dishes")
       let entry = MyTableObject.getWithoutData(this.data.dish.id);
 
@@ -52,7 +52,6 @@ Page({
       entry.update();
       
       this.getDish(dish.id);
-      this.getLikes();
       this.setData({disabled: false})
     })
   },
@@ -86,7 +85,7 @@ Page({
   onLoad: function (options) {
     const id = options.id;
     const currentUser = wx.getStorageSync('user');
-    this.setData({ currentUser: currentUser });
+    this.setData({ currentUser });
     this.getDish(id);
   },
 })

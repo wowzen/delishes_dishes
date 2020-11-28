@@ -8,26 +8,44 @@
   width: 120rpx;
 }
 
-.card {
-  width: 100%;
-  padding: 16rpx;
-  box-sizing: border-box;
-  border-radius: 8rpx;
-  background-color: white;
-  box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
-  margin-bottom: 32rpx;
+.navigation-bar {
+  position: fixed;
+  width: 348px;
+  height: 61px;
+  left: 14px;
+  top: 660px;
+  background-color:#eeecec;
+  display: flex;
+  border-radius: 30px;
+
 }
 
-.image {
-  width: 100%;
+.home {
+  position: absolute;
+  left: 20.69%;
+  right: 70.69%;
+  top: 24.59%;
+  bottom: 26.23%;
+
+
 }
 
-.likes {
-  display: inline-flex;
+.line {
+  position: absolute;
+  left: 40%;
+  right: 37.05%;
+  top: 88%;
+  bottom: 10%;
+
+  border: 1px solid #A4A2A0;
+  transform: rotate(-90deg);
+ 
 }
 
-.like_heart {
-  width: 64rpx;
-  height: 64rpx;
-  margin-left: 32rpx;
+.user {
+  position: absolute;
+  left: 68.68%;
+  right: 22.7%;
+  top: 24.59%;
+  bottom: 26.23%;
 }
