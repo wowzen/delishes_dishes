@@ -1,11 +1,17 @@
-<view class="container">
+
   <view class="card">
     <view class="card-name">{{dish.name}}</view>
     <view class="card-des">{{dish.description}}</view>
-    <view class="card-des">{{dish.location}}</view>
-    <image class="card-image" src="{{dish.image.path}}"></image>
+
+    <image class="card-image" src="{{dish.image.path}}" mode="aspectFit"></image>
+
+    <view class="origin">{{dish.location}}</view>
+    <view class="price"> Estimated Price {{dish.estimated_price}} Yuan</view>
+    <view class="descriptiontitle"> Descrption</view>
+    <view class="description">{{dish.full_description}}</view>
+   
+
     <view>{{dish.likes}}</view>
     <button disabled="{{disabled}}" wx:if="{{currentUser && !liked}}" type="primary" bindtap="addLike"> Like </button>
     <button disabled="{{disabled}}" wx:if="{{currentUser && liked}}" type="warn" bindtap="removeLike">Unlike</button>
   </view>
-</view>

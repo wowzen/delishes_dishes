@@ -1,46 +1,100 @@
 
-.container {
+.card{
   margin-bottom: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 
 }
 
-.card {
-  position: absolute;
-  width: 348px;
-  height: 700px;
-  right: 13px;
-  top: 67px;
-  
-  background: #E5E5E5;
-  border-radius: 10px;
-
-
-}
 
 .card-name {
-  height: 84px;
-  width: 313px;
-  padding-left: 16px;
+  position: relative;
+  padding-top: 8px;
+  padding-left: 8px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
+}
+
+.card-des {
+  position: relative;
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-bottom: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
+}
+
+.card-image {
+border-radius: 12px;
+}
+
+.origin {
+  position: relative;
   padding-top: 8px;
 
   font-family: Roboto;
-  font-style: bold;
-  font-size:65rpx;
-  line-height: 42rpx;
-  line-height: 100%;
-  text-align: left;
-  vertical-align: top;
-  fill: #000000;
-  }
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
 
-.card-des {
-  font-size: 36rpx;
-  color: #666;
-  margin: 50rpx 50rpx;
-  text-align: center;
-  }
+  color: #000000;
 
-.card-image {
-border-radius: 12%;
+}
+ 
+.price {
+  position: relative;
+  padding-top: 8px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
+}
+.descriptiontitle {
+  position: relative;
+  padding-top: 8px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
+}
+.fulldescription {
+
+  padding-top: 8px;
+  padding-left: 8px;
+  padding-bottom: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
 }
