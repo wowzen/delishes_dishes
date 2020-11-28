@@ -14,14 +14,27 @@ Page({
    */
   onLoad: function (options) {
     let currentUser = wx.getStorageSync('user');
-    console.log(currentUser)
     this.setData({currentUser: currentUser})
     let Likes = new wx.BaaS.TableObject("Likes")
     let query = new wx.BaaS.Query()
     query.compare('user_id', "=", currentUser.id)
     Likes.setQuery(query).expand(['dish_id']).find().then(res => {
       console.log(res)
+      this.setData({currentUserDishes: res.data.objects})
     })
+
+  },
+
+  goToDish: function (e) {
+    
+    console.log('goToDish', e)
+    let id = e.currentTarget.dataset.dishid
+    wx.navigateTo({
+      url: `/pages/show/show?id=${id}`,
+    })
+  },
+
+  getUserDishes: function () {
 
   },
 
