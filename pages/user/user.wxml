@@ -1,16 +1,19 @@
 <!--pages/user/user.wxml-->
 <view wx:if="{{currentUser}}">
-  <image class="avatar" src="{{currentUser.avatar}}" mode="aspectFit"/>
-  <view class="userNickName">{{currentUser.nickname}}</view>
-
+  <view class="user">
+    <image class="avatar" src="{{currentUser.avatar}}" mode="aspectFit"/>
+    <view class="userNickName">{{currentUser.nickname}}</view>
+  </view>
+  
   <view class="container">
+    <view class="header">My loved dishes</view>
     <view class="card"  wx:for= "{{dishes}}" wx:key="dish" wx:for-item="dish" data-dishid="{{dish.id}}" bindtap="goToDish">
       <image class="image" src="{{dish.image.path}}" mode="aspectFit"/>
       <view class="name">{{dish.name}}</view>
       <view class="description">{{dish.description}}</view>
       <view class="likes">
         <view class="like_count">{{dish.likes}}</view>
-        <image class="like_heart" src="../../images/heart.png">like</image>
+        <image class="like_heart" src="../../images/like .png">like</image>
       </view>
     </view>
   </view>

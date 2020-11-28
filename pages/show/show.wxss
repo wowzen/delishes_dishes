@@ -34,13 +34,11 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
-
   color: #000000;
-
 }
 
 .card-image {
-border-radius: 12px;
+  border-radius: 12px;
 }
 
 .origin {
