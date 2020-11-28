@@ -7,3 +7,27 @@
 .avatar {
   width: 120rpx;
 }
+
+.card {
+  width: 100%;
+  padding: 16rpx;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+  background-color: white;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 32rpx;
+}
+
+.image {
+  width: 100%;
+}
+
+.likes {
+  display: inline-flex;
+}
+
+.like_heart {
+  width: 64rpx;
+  height: 64rpx;
+  margin-left: 32rpx;
+}

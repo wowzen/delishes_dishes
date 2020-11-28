@@ -2,6 +2,7 @@
   <view class="card">
     <view class="card-name">{{dish.name}}</view>
     <view class="card-des">{{dish.description}}</view>
+    <view class="card-des">{{dish.location}}</view>
     <image class="card-image" src="{{dish.image.path}}"></image>
     <view>{{dish.likes}}</view>
     <button wx:if="{{currentUser && !liked}}" type="primary" bindtap="addLike"> Like </button>
