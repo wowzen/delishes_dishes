@@ -4,7 +4,7 @@
     <view class="card-des">{{dish.description}}</view>
     <image class="card-image" src="{{dish.image.path}}"></image>
     <view>{{dish.likes}}</view>
-    <button wx:if="{{currentUser && !liked}}" type="primary" bindtap="addLike"> Like </button>
-    <button wx:if="{{currentUser && liked}}" type="warn" bindtap="removeLike">Unlike</button>
+    <button disabled="{{disabled}}" wx:if="{{currentUser && !liked}}" type="primary" bindtap="addLike"> Like </button>
+    <button disabled="{{disabled}}" wx:if="{{currentUser && liked}}" type="warn" bindtap="removeLike">Unlike</button>
   </view>
 </view>
