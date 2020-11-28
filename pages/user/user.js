@@ -16,11 +16,13 @@ Page({
     let currentUser = wx.getStorageSync('user');
     console.log(currentUser)
     this.setData({currentUser: currentUser})
-    let likes = new wx.BaaS.TableObject("Likes")
+    let Likes = new wx.BaaS.TableObject("Likes")
     let query = new wx.BaaS.Query()
-    likes.setQuery(query).find(res => {
+    query.compare('user_id', "=", currentUser.id)
+    Likes.setQuery(query).expand(['dish_id']).find().then(res => {
       console.log(res)
     })
+
   },
 
   login: function (e) {
