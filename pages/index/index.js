@@ -2,13 +2,15 @@ Page({
   onLoad: function () {
     let currentUser = wx.getStorageSync('user')
     this.setData({currentUser: currentUser})
+  },
+
+  onShow: function () {
     let Dishes = new wx.BaaS.TableObject("dishes")
     Dishes.find().then(res => {
       this.setData({dishes: res.data.objects})
     }, err => {
       // err
     })
-
   },
 
   goToDish: function (e) {
@@ -19,4 +21,5 @@ Page({
       url: `/pages/show/show?id=${id}`,
     })
   },
+  
 })
