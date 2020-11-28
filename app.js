@@ -6,6 +6,8 @@ App({
 
     let clientID = 'de251845f76399303498'  // 应用名称: ZEN的第一个小程序;
     wx.BaaS.init(clientID);
-    wx.BaaS.auth.loginWithWechat();
+    wx.BaaS.auth.loginWithWechat().then(user => {
+      wx.setStorageSync('user', user);
+    })
   }
 })
